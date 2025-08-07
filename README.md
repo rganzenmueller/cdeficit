@@ -33,7 +33,7 @@ The input data for this analysis are sourced from various publicly available dat
 * [TRENDY]
 * [Walker2022]
 * [WDPA]
-* [worldclim]
+* [WorldClim]
 
 
 [Copernicus Land Service]: https://zenodo.org/communities/copernicus-land-cover/
@@ -54,7 +54,7 @@ The input data for this analysis are sourced from various publicly available dat
 [TRENDY]: https://mdosullivan.github.io/GCB/
 [Walker2022]: https://doi.org/10.7910/DVN/DSDDQK
 [WDPA]: https://www.protectedplanet.net/en/thematic-areas/wdpa?tab=WDPA
-[worldclim]: https://www.worldclim.org/data/worldclim21.html
+[WorldClim]: https://www.worldclim.org/data/worldclim21.html
 
 ### Requirements
 * Python: Version 3.12
@@ -69,20 +69,20 @@ The input data for this analysis are sourced from various publicly available dat
 │   ├── xgrid_utils.py                        # Function to calculate grid cell area  
 │   ├── 01_01_prep_land_mask.ipynb            # Create land-sea mask from copernicus luc data  
 │   ├── 01_02_prep_area_ha.ipynb              # Create array with grid cell areas of target grid  
-│   ├── 01_xx_prep_copernicusluc.ipynb        # Prepare Copernicus LUC data  
-│   ├── 01_xx_prep_esabio.ipynb               # Prepare ESA CCI biomass data  
-│   ├── 01_xx_prep_esacciluc.ipynb            # Prepare ESA CCI luc data  
-│   ├── 01_xx_prep_fao2010.ipynb              # Prepare ecozone data (FAO global ecological zones)  
-│   ├── 01_xx_prep_geom90m.ipynb              # Prepare geom90m data (Amatulli)  
-│   ├── 01_xx_prep_gsoc2022.ipynb             # Prepare GSOC soil data (FAO)  
-│   ├── 01_xx_prep_hilda.ipynb                # Prepare HILDA+ LUC data (Winkler)  
-│   ├── 01_xx_prep_huang2021.ipynb            # Prepare belowground biomass data (Huang)  
-│   ├── 01_xx_prep_lesiv2022.ipynb            # Prepare forest management data (Lesiv)  
-│   ├── 01_xx_prep_riggio2020.ipynb           # Prepare human influence data (Riggio)  
-│   ├── 01_xx_prep_soilgrids.ipynb            # Prepare soilgrids data (Poggio, Hengl)  
-│   ├── 01_xx_prep_spawn.ipynb                # Prepare above and belowground biomass carbon data (Spawn)  
-│   ├── 01_xx_prep_wdpa.ipynb                 # Prepare protected areas data (WDPA)  
-│   └── 01_xx_prep_worldclim.ipynb            # Prepare worldclim data (Fick)  
+│   ├── 01_xx_prep_copernicusluc.ipynb        # Prepare copernicus luc data  
+│   ├── 01_xx_prep_esabio.ipynb               # Prepare esa cci biomass data  
+│   ├── 01_xx_prep_esacciluc.ipynb            # Prepare esa cci luc data  
+│   ├── 01_xx_prep_fao2010.ipynb              # Prepare ecozone data (fao global ecological zones)  
+│   ├── 01_xx_prep_geom90m.ipynb              # Prepare geom90m data (amatulli)  
+│   ├── 01_xx_prep_gsoc2022.ipynb             # Prepare gsoc soil data (fao)  
+│   ├── 01_xx_prep_hilda.ipynb                # Prepare hilda+ luc data (winkler)  
+│   ├── 01_xx_prep_huang2021.ipynb            # Prepare belowground biomass data (huang)  
+│   ├── 01_xx_prep_lesiv2022.ipynb            # Prepare forest management data (lesiv)  
+│   ├── 01_xx_prep_riggio2020.ipynb           # Prepare human influence data (riggio)  
+│   ├── 01_xx_prep_soilgrids.ipynb            # Prepare soilgrids data (poggio, hengl)  
+│   ├── 01_xx_prep_spawn.ipynb                # Prepare above and belowground biomass carbon data (spawn)  
+│   ├── 01_xx_prep_wdpa.ipynb                 # Prepare protected areas data (wdpa)  
+│   └── 01_xx_prep_worldclim.ipynb            # Prepare worldclim data (fick)  
 │  
 ├── 02_dbase                                  # Database for random forest models  
 │   ├── 02_01_prep_biomass_carbon.ipynb       # Prepare biomass carbon data  
@@ -105,36 +105,36 @@ The input data for this analysis are sourced from various publicly available dat
 ├── 05_prep_other                             # Data preparation for plots and tables  
 │   ├── regrid_high_res_v1_01.py              # Function for regridding global high resolution data  
 │   ├── xgrid_utils.py                        # Function to calculate grid cell area  
-│   ├── 05_01_prep_fig_total_carbon.ipynb     # Prepare data for Figure "Total carbon barplot"  
-│   ├── 05_02_prep_fig_ecozone.ipynb          # Prepare data for Figure "Ecozone"  
-│   ├── 05_03_prep_fig_example.ipynb          # Prepare data for Figure "Example"  
-│   ├── 05_04_01_prep_dgvm_for_regridd.ipynb  # Prepare data for Figure "DGVM" - Prepare DGVM for regridding  
-│   ├── 05_04_02_prep_other_for_regridd.ipynb # Prepare data for Figure "DGVM" - Prepare other data for regridding  
-│   ├── 05_04_03_prep_grid_area.ipynb         # Prepare data for Figure "DGVM" - Prepare grid cell area data  
-│   ├── 05_04_04_regridd_dgvm.ipynb           # Prepare data for Figure "DGVM" - Regridd DGVMs using CDO  
-│   ├── 05_04_05_regridd_other.ipynb          # Prepare data for Figure "DGVM" - Regridd other  
+│   ├── 05_01_prep_fig_total_carbon.ipynb     # Prepare data for figure "total carbon barplot"  
+│   ├── 05_02_prep_fig_ecozone.ipynb          # Prepare data for figure "ecozone"  
+│   ├── 05_03_prep_fig_example.ipynb          # Prepare data for figure "example"  
+│   ├── 05_04_01_prep_dgvm_for_regridd.ipynb  # Prepare data for figure "dgvm" - Prepare dgvm for regridding  
+│   ├── 05_04_02_prep_other_for_regridd.ipynb # Prepare data for figure "dgvm" - Prepare other data for regridding  
+│   ├── 05_04_03_prep_grid_area.ipynb         # Prepare data for figure "dgvm" - Prepare grid cell area data  
+│   ├── 05_04_04_regridd_dgvm.ipynb           # Prepare data for figure "dgvm" - Regridd dgvms using CDO  
+│   ├── 05_04_05_regridd_other.ipynb          # Prepare data for figure "dgvm" - Regridd other  
 │   ├── 05_04_06_merge_all.ipynb              # Create dataset with all data at luh2 resolution  
 │   ├── 05_04_07_calc_values_global.ipynb     # Calculate global carbon stocks for 1700 primary land area  
 │   └── 05_04_08_calc_values_ecozone.ipynb    # Calculate ecozone carbon stocks for 1700 primary land area  
 │  
 ├── 06_eval                                   # Plots and tables  
-│   ├── 06_01_fig_total_carbon_barplot.ipynb  # Figure Total carbon barplot - Fig 1  
-│   ├── 06_02_fig_spatial_carbon_maps.ipynb   # Figure Spatial carbon maps - Fig 2  
-│   ├── 06_03_fig_ecozone_gabstract.ipynb     # Figures Ecozone and graphical abstract - Fig 3 - Fig Graphical Abstract  
-│   ├── 06_04_fig_spatial_examples_map.ipynb  # Figures Spatial examples - Fig 4 - Fig S3  
-│   ├── 06_05_fig_dgvm.ipynb                  # Figure DGMV - Fig 5
-│   ├── 06_06_fig_uncertainties_maps.ipynb    # Figure Uncertainties maps - Fig S1
-│   ├── 06_07_fig_diff_other_maps.ipynb       # Figure Carbon difference other studies - Fig S2
-│   ├── 06_08_fig_dgvm_deficit_maps.ipynb     # Figures DGVM carbon deficit maps - Fig S4 - Fig S5
-│   ├── 06_09_fig_dgvm_eco_barplot.ipynb      # Figure DGVM Deficit Ecosystem Barplot - Fig S6
-│   ├── 06_10_fig_luh2_primary1700.ipynb      # Figure LUH2 Primary 1700 - Fig S7
-│   ├── 06_11_fig_carbon_eco_scatter.ipynb    # Figure Carbon Ecosystem Scatter - Fig S8
-│   ├── 06_12_fig_latitude_carbon.ipynb       # Figure Latitude carbon - Fig S9
-│   ├── 06_13_fig_training_data_maps.ipynb    # Figure Training data maps - Fig S10
-│   ├── 06_14_fig_dgvm_forest_cover.ipynb     # Figure DGVM Forest Cover - Fig S11
-│   ├── 06_15_fig_uncertainties_under.ipynb   # Figure Uncertainties underlying carbon - Fig S12
-│   ├── 06_16_fig_scatter_performance.ipynb   # Figures Performance of Random Forest Models Scatter - Fig S13 - Fig S14
-│   ├── 06_17_fig_feature_importance.ipynb    # Figure Feature Importance - Fig S15
+│   ├── 06_01_fig_total_carbon_barplot.ipynb  # Figure total carbon barplot - Fig 1  
+│   ├── 06_02_fig_spatial_carbon_maps.ipynb   # Figure spatial carbon maps - Fig 2  
+│   ├── 06_03_fig_ecozone_gabstract.ipynb     # Figures ecozone and graphical abstract - Fig 3 - Fig graphical abstract  
+│   ├── 06_04_fig_spatial_examples_map.ipynb  # Figures spatial examples - Fig 4 - Fig S3  
+│   ├── 06_05_fig_dgvm.ipynb                  # Figure dgvm - Fig 5
+│   ├── 06_06_fig_uncertainties_maps.ipynb    # Figure uncertainties maps - Fig S1
+│   ├── 06_07_fig_diff_other_maps.ipynb       # Figure carbon difference other studies - Fig S2
+│   ├── 06_08_fig_dgvm_deficit_maps.ipynb     # Figures dgvm carbon deficit maps - Fig S4 - Fig S5
+│   ├── 06_09_fig_dgvm_eco_barplot.ipynb      # Figure dgvm Deficit Ecosystem Barplot - Fig S6
+│   ├── 06_10_fig_luh2_primary1700.ipynb      # Figure luh2 primary 1700 - Fig S7
+│   ├── 06_11_fig_carbon_eco_scatter.ipynb    # Figure carbon ecosystem scatter - Fig S8
+│   ├── 06_12_fig_latitude_carbon.ipynb       # Figure latitude carbon - Fig S9
+│   ├── 06_13_fig_training_data_maps.ipynb    # Figure training data maps - Fig S10
+│   ├── 06_14_fig_dgvm_forest_cover.ipynb     # Figure dgvm forest cover - Fig S11
+│   ├── 06_15_fig_uncertainties_under.ipynb   # Figure uncertainties underlying carbon - Fig S12
+│   ├── 06_16_fig_scatter_performance.ipynb   # Figures performance of random forest models - Fig S13 - Fig S14
+│   ├── 06_17_fig_feature_importance.ipynb    # Figure feature importance - Fig S15
 │   └── 06_18_numbers_for_publication.ipynb   # Calculate numbers for publication  
 │  
 ├── environment.yml
